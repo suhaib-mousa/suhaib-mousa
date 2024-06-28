@@ -345,7 +345,17 @@ video {
 
 @media only screen and (max-width: 600px) {
     
-
+    .centralText{
+        font-size: 40px;
+    }
+    .tabs {
+    }
+    .tab {
+        letter-spacing: 0 !important;
+    }
+    .tab h2{
+        font-size: 16px !important;
+    }
     .container {
         padding: 0px;
         width: 100%;
@@ -376,12 +386,6 @@ video {
 
     p {
         font-size: calc(80%);
-    }
-
-    .socialMedia {
-        display: flex;
-        position: relative;
-        flex-direction: row;
     }
 
     .socialMedia a i {
