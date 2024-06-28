@@ -41,23 +41,3 @@ function tab(x){
     });
 
 }
-
-$(function(){
-    var $age = $('#age');
-    
-    // Your birthdate
-    var birthDate = new Date(2002, 8, 3); // Months are 0-indexed, so 8 is September
-    
-    // Current date
-    var currentDate = new Date();
-    
-    // Calculate age
-    var age = currentDate.getFullYear() - birthDate.getFullYear();
-    var m = currentDate.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    
-    // Set age in the #age element
-    $age.text(age);
-});
