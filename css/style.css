@@ -33,7 +33,7 @@ body {
 .container {
     position: fixed;
 }
-.centralText{
+.welcome-text{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -345,7 +345,7 @@ video {
 
 @media only screen and (max-width: 600px) {
     
-    .centralText{
+    .welcome-text{
         font-size: 40px;
     }
     .tabs {
@@ -536,7 +536,6 @@ video {
     height: 35px;
     list-style: none;
     opacity: 0;
-    background: radial-gradient(deepskyblue,transparent,transparent);
     bottom: 0;
     left: 2vw;
     animation: animate 15s linear infinite;
@@ -580,3 +579,4 @@ video {
         bottom: 100vh;
     }
 }
+
