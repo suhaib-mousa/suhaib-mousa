@@ -1,9 +1,1 @@
-# suhaib-mousa
-
-I'm Suhaib Mousa, a software engineer with a CIS degree from the University of Jordan.
-
-Passionate about coding from a young age, I've excelled in competitive programming, securing 2nd place in a contest.
-
-I thrive in dynamic team environments and live by the motto, "We Unleash New Momentum."
-
-I aspire to be the fifth knight in the global market, joining the ranks of tech giants. I am confident that I will achieve this goal inshallah with my skills and determination.
+ [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F7F7F7&center=true&vCenter=true&random=false&width=435&lines=Mid-Senior+Software+Engineer;Competitive+Programmer;%22We+Unleash+New+Momentum%22;I'm+me.)](https://git.io/typing-svg)
