@@ -87,12 +87,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     document.addEventListener("DOMContentLoaded", function() {
-      const sections = document.querySelectorAll('.my-container');
+      const sections = document.querySelectorAll('.target');
       let index = 0;
       let isScrolling = false; // Flag to prevent multiple scrolls
   
+      const nextButton = document.getElementById('next');
+      const prevButton = document.getElementById('prev');
+  
       function scrollToSection(index) {
           sections[index].scrollIntoView({ behavior: 'smooth' });
+          updateButtonVisibility();
       }
   
       function scrollToNextSection() {
@@ -117,6 +121,31 @@ document.addEventListener("DOMContentLoaded", function(event) {
           }
       }
   
+      function updateButtonVisibility() {
+          if (index === 0) {
+              prevButton.style.display = 'none';
+          } else {
+              prevButton.style.display = 'block';
+          }
+  
+          if (index === sections.length - 1) {
+              nextButton.style.display = 'none';
+          } else {
+              nextButton.style.display = 'block';
+          }
+      }
+  
+      function determineCurrentSection() {
+          let currentSection = 0;
+          sections.forEach((section, idx) => {
+              const rect = section.getBoundingClientRect();
+              if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+                  currentSection = idx;
+              }
+          });
+          return currentSection;
+      }
+  
       window.addEventListener('wheel', function(e) {
           if (e.deltaY > 0) {
               scrollToNextSection();
@@ -124,5 +153,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
               scrollToPrevSection();
           }
       });
+  
+      nextButton.addEventListener('click', function() {
+          scrollToNextSection();
+      });
+  
+      prevButton.addEventListener('click', function() {
+          scrollToPrevSection();
+      });
+  
+      // Determine the initial section based on the scroll position
+      index = determineCurrentSection();
+      updateButtonVisibility();
   });
+  
   

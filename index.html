@@ -14,119 +14,82 @@
     <script src="js/site.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="js/custom-cursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.min.js" integrity="sha512-E1dSFxg+wsfJ4HKjutk/WaCzK7S2wv1POn1RRPGh8ZK+ag9l244Vqxji3r6wgz9YBf6+vhQEYJZpSjqWFPg9gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/messages.js"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class="nav">
-        <img class="logo" src="images/suhaibLogowhite.png" alt="">
+        <img class="logo" src="images/suhaib's logo.png" alt="">
     </div>
-    <div class="container">
+    <div id="my-works" class="container-fluid target">
         <div class="my-container">
-            <div class="welcoming-text w-50">
-                <p class="welcome-to">
-                    Welome to 
-                </p>
-                <p class="my-name">
-                    Suhaib's
-                </p> 
-                <p>
-                    website
-                </p>
-            </div>
-            <div class="welcoming-img w-50">
-            <img class="movable-img img-fluid" src="images/suhaib's logo 3d.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="arrow" target="about-me">
-        <div class="arrow-top"></div>
-        <div class="arrow-bottom"></div>
-    </div>
-    <p class="break"></p>
-    <div class="container-fluid">
-        <div id="about-me" class="my-container">
-            <div class="welcoming-img w-50">
-                <img class="movable-img me img-fluid" src="images/file.png" alt="">
-            </div>
-            <div class="about-text w-50">
-                <h2>Coding with Creativity</h2>
-                <p>
-                    Hi, I'm Suhaib Mousa, a passionate software engineer skilled in coding and competitive programming. I excel in dynamic team environments, driven by creativity and simplicity. My goal is to join global tech giants, confident that I will achieve this, inshallah.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="arrow" target="my-works">
-        <div class="arrow-top"></div>
-        <div class="arrow-bottom"></div>
-    </div>
-    <p class="break"></p>
-    <div class="container-fluid">
-        <div id="my-works" class="my-container">
-           <div>
-                <p class="my-works-title">MY WORKS</p>
-                <h1>
-                    SOON
-                </h1>
-           </div>
-        </div>
-    </div>
-    <div class="arrow" target="contact">
-        <div class="arrow-top"></div>
-        <div class="arrow-bottom"></div>
-    </div>
-    <p class="break"></p>
-
-    <div class="container-fluid">
-        <div id="contact" class="my-container">
-            <div class="text-center">
-                <h1 class="bold w-100 lets">Let's talk</h1>
-                <div class="d-flex gap-5">
-                    <a href="mailto:suhaibmousa032@gmail.com" target="_blank">
-                        <div class="light-button" type="gmail">
-                            <button class="bt">
-                            <div class="light-holder">
-                                <div class="dot"></div>
-                                <div class="light"></div>
-                            </div>
-                            <div class="button-holder">
-                                <i class='bx bxl-gmail' ></i>
-                            </div>
-                            </button>
-                        </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/suhaib-mousa/" target="_blank">
-                        <div class="light-button" type="linkedin">
-                            <button class="bt">
-                            <div class="light-holder">
-                                <div class="dot"></div>
-                                <div class="light"></div>
-                            </div>
-                            <div class="button-holder">
-                                <i class='bx bxl-linkedin-square' ></i>
-                            </div>
-                            </button>
-                        </div>
-                    </a>
-                    <a href="https://github.com/suhaib-mousa" target="_blank">
-                        <div class="light-button" type="github">
-                            <button class="bt">
-                            <div class="light-holder">
-                                <div class="dot"></div>
-                                <div class="light"></div>
-                            </div>
-                            <div class="button-holder">
-                                <i class='bx bxl-github'></i>
-                            </div>
-                            </button>
-                        </div>
-                    </a>
+                <div class="welcoming-img w-50">
+                    <img class="movable-img me img-fluid" src="images/file.png" alt="">
                 </div>
-            </div>
+                <div class="messages-container w-50">
+                    <div class="messages">
+                        <div class="message">
+                            <h5>Hi, I'm Suhaib Mousa</h5>
+                            <p class="message-text">
+                                        I work as a 
+                                        <span class="colored-text">Software Engineer</span>
+                                        skilled in coding and competitive programming.
+                            </p>
+                        </div>
+                        <div class="message">
+                            <h5>What am I doing now?</h5>
+                            <p class="message-text">
+                                Mid-Senior (SDE I) at DevNAS. My aspire to join global tech giants, confident that I will achieve this, inshallah.
+
+                            </p>
+                        </div>
+                        <div class="message">
+                            <h5>See a sample of my work</h5>
+                            <div class="d-flex align-items-baseline">
+                                <!-- <div class="col-4 px-1">
+                                    <img class="img-fluid rounded" src="./images/dynaimc page conver.png" alt="">
+                                </div>     
+                                <div class="col-4 px-1">
+                                    <img class="img-fluid rounded" src="./images/schedulity cover.png" alt="">
+                                </div>    
+                                <div class="col-4 px-1">
+                                    <img class="img-fluid rounded" src="./images/Dithering conver.png" alt="">
+                                </div>                                -->
+                                Soon...
+                            </div>
+                        </div>
+                        <div class="message" style="display: block;width: 10rem;">
+                            <h5>Let's talk</h5>
+                            <a href="mailto:suhaibmousa032@gmail.com" class="align-items-baseline d-flex justify-content-around mail-btn p-1">
+                                <i class='bx bxs-envelope'></i>
+                                <span>send mail</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="typing" class="chat-bubble">
+                        <div class="typing">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    <p class="break"></p>
-      
     <div class="custom-cursor"></div>
+    <script id="messages-template" type="text/x-handlebars-template">
+        <h5>{{title}}</h5>
+        <p class="message-text">
+            {{#each segments}}
+                {{#if isColored}}
+                    <span class="colored-text">{{text}}</span>
+                {{else}}
+                    {{text}}
+                {{/if}}
+            {{/each}}
+        </p>
+    </script>
 </body>
 </html>
