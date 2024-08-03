@@ -492,3 +492,47 @@ a {
   border-radius: 1rem;
   color: white;
 }
+i.bx.text-white {
+  font-size: 3rem;
+}
+.socials {
+  top: 20%;
+  left: 5%;
+}
+@media only screen and (max-width: 767px) {
+  .logo {
+    width: 40px;
+  }
+  .my-container{
+    width: 95%;
+  }
+  h5 {
+    font-size: 1rem;
+  
+  }
+  .message-text {
+    font-size: 12px;
+  }
+  .target {
+    height: auto;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+  }
+  .messages-container {
+    width: 80% !important;
+  }
+  .movable-img {
+    position: absolute !important;
+    left: -150px !important;
+    top: 190px !important;
+  }
+  i.bx.text-white {
+    font-size: 1.5rem;
+  }
+  .socials {
+    top: 10%;
+  }
+}
+
