@@ -12,3 +12,4 @@
     </td>
   </tr>
 </table>
+<!-- ![Visitor Count](https://profile-counter.glitch.me/suhaib-mousa/count.svg) -->
